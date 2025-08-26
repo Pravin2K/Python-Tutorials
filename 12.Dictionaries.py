@@ -443,7 +443,7 @@ print(mydict)
 #Output : {'table': ['a peace of furniture', 'list of fact & figure'], 'cat': 'a small animal'}
 
 
-'''WAP to enter marks of 3 subject from the user and store them in a dictionary. Start with an empty
+'''Q2. WAP to enter marks of 3 subject from the user and store them in a dictionary. Start with an empty
 dictionary and add one by one. Use subject as key and marks as values.'''
 marks = {}
 Python = int(input("Enter your Python's marks : "))
@@ -451,17 +451,16 @@ SQl = int(input("Enter your SQL's marks : "))
 Java = int(input("Enter your Java's marks : "))
 marks.update({"Python": Python, "SQL": SQl, "Java": Java})
 print(marks)
+#Output : {'Python': 98, 'SQL': 70, 'Java': 30}
 
 
+'''OR'''
 
-
-
-
-# Subject = {
-#     "Python" : Python,
-#     "SQL" : SQl,
-#     "Java" : Java
-# }
-# print(Subject)
+Subject = {
+    "Python" : Python,
+    "SQL" : SQl,
+    "Java" : Java
+}
+print(Subject)
 #Output : {'Python': 98, 'SQL': 70, 'Java': 40}
 

@@ -281,7 +281,7 @@ user2 = input("Enter the 2nd movies name : ")
 user3 = input("Enter the 3rd movies name : ")
 movies = [user1, user2, user3]
 print(movies)
-print(type(movies))  #Output :
+print(type(movies))  #Output : ['Dhoom', 'Dhol', 'Golmal']
 
 
 
@@ -290,4 +290,4 @@ palindrom = [1,2,3,2,1]
 if palindrom[::-1] == palindrom:
     print('Palindrom')
 else:
-    print('not palindrome')
+    print('not palindrome')  #Output : Palindrom

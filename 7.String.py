@@ -62,7 +62,7 @@ print(var[2 : 5]) #Output : llo
 #. Get the characters from the start to position 5 (not included):
 var1 = 'Hello, World!'
 print(var1[0 : 5]) #or
-print(var1[0 : 5]) #Output : Hello
+print(var1[: 5]) #Output : Hello
 
 
 #. Get the characters from position 2, and all the way to the end:

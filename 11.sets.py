@@ -340,4 +340,4 @@ print(set1)  #Output : {'microsoft', 'banana', 'google', 'cherry'}
 '''Q1. Your are given a list of subject for students.assume 1 classroom is required for one subject.
 Howmany classroom are needed by all students'''
 subject = {"python", "java", "C++", "python", "javascripts", "java", "python", "java", "C++", "C"}
-print(len(subject))
+print(len(subject)) #Output : 5
