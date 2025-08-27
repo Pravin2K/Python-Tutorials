@@ -84,9 +84,74 @@ This way the order of the arguments does not matter.
 #. Example : 
 def myFunc(c1, c2, c3):
     print(f'The youngest child is {c3}')
-myFunc(c1='Max', c2='Glan', c3='Albe')
+myFunc(c1='Max', c2='Glan', c3='Albe') #Output: The youngest child is Albe
 
 
+
+
+
+
+
+###########################***Arbitrary Keyword Arguments, **kwargs***################################
+#Q. What is Arbitrary Keyword Arguments, **kwargs?
+'''
+If you do not know how many keyword arguments that will be passed into your function, add two asterisk: ** 
+before the parameter name in the function definition.
+This way the function will receive a dictionary of arguments, and can access the items accordingly:
+Arbitrary Kword Arguments are often shortened to **kwargs in Python documentations.
+'''
+#. Example : If the number of keyword arguments is unknown, add a double ** before the parameter name:
+def myFunc(**kid):
+    print(f'His last name is {kid['lname']}')
+myFunc(fname= "John", lname= 'Doe')  #Output : His last name is Doe
+
+
+
+
+
+################################***Default Parameter Value***################################
+#Q. What is default parameter value?
+'''
+The following example shows how to use a default parameter value.
+If we call the function without argument, it uses the default value:
+'''
+#. Example : 
+def myFunc(country = "Norway"):
+    print(country)
+myFunc()  #Output : Norway
+
+
+
+
+#Q. Passing a List as an Argument.
+'''
+You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same 
+data type inside the function.
+E.g. if you send a List as an argument, it will still be a List when it reaches the function:
+'''
+#. Example : 
+def myFunc(food):
+    for x in food:
+        print(x)
+food = ["Pizza", "Pasta", "Barger"]
+myFunc(food)
+
+
+
+
+
+###################################***Return values***#################################
+#Q. What is return value?
+'''
+The return statement is used inside a function to send a value back to the caller.
+Without return, the function will output None (by default).
+A function can return any data type (numbers, strings, lists, dicts, even other functions).
+'''
+#. Example 1: Simple Return
+def add(a, b):
+    return a + b
+result = add(5, 19)
+print(result)
 
 
     
